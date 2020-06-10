@@ -1,0 +1,10 @@
+days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+starting_day_index=int(input("Enter your starting day number for your holiday: "))
+    
+nights=int(input("How many nights you want to go holiday residence: "))
+
+return_day_index=nights%7+starting_day_index
+return_day_index=return_day_index%7
+   
+print("You would return home on a day(",return_day_index,")")
