@@ -1,0 +1,11 @@
+months=[]
+
+for i in range(12):
+    months.append(float(input("Enter air pollution amount: ")))
+    
+months=tuple(months)
+
+print("Total air pollution amount for each of 12 months: ",sum(months)) 
+print("Average monthly pollution rate: ",sum(months)/12)
+print("The index of the months of with highest months: ",max(months))
+print("The index of the months of with highest months: ",min(months))
