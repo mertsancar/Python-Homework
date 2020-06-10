@@ -1,0 +1,12 @@
+perfects=[]
+for i in range(1,10000):
+    sum=0
+    bolen=1
+    while bolen < i:
+        if not i % bolen:
+            sum=sum+bolen
+        bolen = bolen + 1
+    if sum==i:
+       perfects.append(i) 
+        
+print(perfects)
